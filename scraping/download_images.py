@@ -16,5 +16,5 @@ def download_image(df, path) :
 
         urllib.request.urlretrieve(link, complete_path)
 
-df = pd.read_csv(r'./data_beers.csv')
-#download_image(df, './images/')
+df = pd.read_excel(r'./data_beers.xlsx')
+download_image(df, './data/images/')

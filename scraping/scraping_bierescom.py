@@ -40,4 +40,4 @@ for page in range(1, nb_pages + 1) :
             name = div_name.getText()
             df_beer.at[index, "name"] = name
         
-df_beer.to_csv("scraping_bierescom.csv")
+df_beer.to_csv("data/scraping_bierescom.csv")

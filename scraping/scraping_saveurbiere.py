@@ -50,4 +50,4 @@ for page in range(1, nb_pages + 1) :
         price = div_price.getText()
         df_beer.at[index, "price"] = price[:-1]'''
 
-df_beer.to_csv("scraping_saveurbiere.csv")
+df_beer.to_csv("data/scraping_saveurbiere.csv")

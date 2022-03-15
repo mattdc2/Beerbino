@@ -45,11 +45,8 @@ for page in range(1, nb_pages + 1) :
         div_type = div_beer.find("span", {"class": "product-attribute"})
         if div_type != None :
             if len(div_type) >= 2 :
-                df_beer['type'] = 'TO_DELETE'
+                df_beer['type'] = ""
             else :
                 type = div_type.contents[0]
-                print(type)
-                if type not in ['25cl', '33cl', '37,5cl', '50cl', '75cl', '1,5L', '1L'] :
-                    df_beer['type'] = 'TO_DELETE'
-        
-df_beer.to_csv("scraping_auchan.csv")
+
+df_beer.to_csv("data/scraping_auchan.csv")
